@@ -1,7 +1,7 @@
-const Sidebar = () => {
+const Sidebar = ({ handleToggleModal }) => {
   return (
     <div className="sidebar">
-      <div className="bgOverlay"></div>
+      <div onClick={handleToggleModal} className="bgOverlay"></div>
       <div className="sidebarContents">
         <h2>The Brutal Martian Landscape</h2>
         <div>
@@ -11,7 +11,7 @@ const Sidebar = () => {
             blanditiis, laboriosam in error magni!
           </p>
         </div>
-        <button>
+        <button onClick={handleToggleModal}>
           <i className="fa-solid fa-arrow-right"></i>
         </button>
       </div>

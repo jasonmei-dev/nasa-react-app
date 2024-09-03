@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = ({ handleToggleModal }) => {
   return (
     <footer>
       <div className="bgGradient"></div>
@@ -6,7 +6,7 @@ const Footer = () => {
         <h2>The Brutal Martian Landscape</h2>
         <h1>APOD PROJECT</h1>
       </div>
-      <button>
+      <button onClick={handleToggleModal}>
         <i className="fa-solid fa-circle-info"></i>
       </button>
     </footer>
