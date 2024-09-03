@@ -1,8 +1,8 @@
 const Main = () => {
   return (
-    <>
-      <img src="mars.png" alt="mars-demo-picture"></img>
-    </>
+    <div className="imgContainer">
+      <img src="mars.png" alt="mars-demo-picture" className="bgImage"></img>;
+    </div>
   );
 };
 
